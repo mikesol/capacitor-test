@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <style>
+              .bitcrusher-demo {
+                padding: 20px;
+                border-radius: 10px;
+                border: 2px lightgray solid;
+                width: fit-content;
+              }
+              .bitcrusher-demo div {
+                padding: 10px 0px;
+              }
+              div.source-selector > label {
+                display: inline-block;
+              }
+              input {
+                display: block;
+              }
+              label {
+                display: block;
+              }
+              label > span,
+              label > input {
+                display: inline-block;
+              }
+        </style>
+      <script type="module" crossorigin src="/assets/index.77af82fc.js"></script>
+    </head>
+    <body>
+        <div class="bitcrusher-demo">
+            <div class="effect-controls">
+              <h1>Bitcrusher Demo</h1>
+              <div class="source-selector">
+                <label>audio clip <input value="audio" type="radio" name="source-selector" checked /></label>
+                <label>sine <input value="sine" type="radio" name="source-selector" /> </label>
+                <label>square <input value="square" type="radio" name="source-selector"  /></label>
+                <label>sawtooth <input value="sawtooth" type="radio" name="source-selector"  /></label>
+              </div>
+              <label>
+                <span>volume</span>
+                <input name="volume" type="range" min="0.0" max="0.7" step="0.05" />
+                <span class="volume-value"></span>
+              </label>
+              <label>
+                <span>bit depth</span>
+                <input name="bits" type="range" min="1" max="16" step="1" />
+                <span></span>
+                <span class="bits-value"></span>
+              </label>
+              <label>
+                <span>downsampling</span>
+                <input name="downsampling" type="range" min="1" max="40" step="1" />
+                <span class="downsampling-value"></span>
+              </label>
+            </div>
+            <div class="transport-controls">
+              <button name="start">start</button>
+              <button name="stop">stop</button>
+              <button name="info">info</button>
+            </div>
+            <script src="app.js"></script>
+          </div>
+    </body>
+</html>

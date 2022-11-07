@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">butcrusher</string>
+    <string name="title_activity_main">butcrusher</string>
+    <string name="package_name">fm.joyride.bctest</string>
+    <string name="custom_url_scheme">fm.joyride.bctest</string>
+</resources>
